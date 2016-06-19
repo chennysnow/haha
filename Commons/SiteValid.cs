@@ -6,33 +6,6 @@ namespace Commons
     {
         private const RegexOptions Ro = RegexOptions.Singleline | RegexOptions.IgnoreCase;
         /// <summary>
-        /// 商城分类id 验证
-        /// </summary>
-        /// <param name="catId">分类id</param>
-        /// <returns></returns>
-        abstract public bool ValidCatId(string catId);
-
-        /// <summary>
-        /// 商城分类验证
-        /// </summary>
-        /// <param name="catName">分类</param>
-        /// <returns></returns>
-        abstract public bool ValidCatName(string catName);
-
-        /// <summary>
-        /// 产品名称验证
-        /// </summary>
-        /// <param name="itemName"> 产品名称</param>
-        /// <returns></returns>
-        abstract public bool ValidItemName(string itemName);
-        /// <summary>
-        /// 产品url验证
-        /// </summary>
-        /// <param name="itemurl"> 产品url</param>
-        /// <returns></returns>
-        abstract public bool ValidItemurl(string itemurl);
-
-        /// <summary>
         /// 正则匹配
         /// </summary>
         /// <param name="regInfo">正则信息 必须带有 "x" </param>
@@ -80,7 +53,6 @@ namespace Commons
             }
             catch (Exception)
             {
-
                 return null;
             }
 

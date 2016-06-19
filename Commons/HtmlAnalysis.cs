@@ -127,9 +127,6 @@ namespace Commons
         /// </summary>
         public WebProxy RequesProxy { get; set; }
 
-
-
-        static int _nonius;
         static readonly Regex IpPortReg = new Regex("(?<ip>\\d+\\.\\d+\\.\\d+\\.\\d+):(?<port>\\d*)");
 
         public string httpsGet(string url)
